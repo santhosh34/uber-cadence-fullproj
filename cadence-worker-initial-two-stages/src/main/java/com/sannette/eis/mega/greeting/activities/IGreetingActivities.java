@@ -1,4 +1,4 @@
-package com.sannette.eis.mega.workflowactivities;
+package com.sannette.eis.mega.greeting.activities;
 
 import com.uber.cadence.activity.ActivityMethod;
 

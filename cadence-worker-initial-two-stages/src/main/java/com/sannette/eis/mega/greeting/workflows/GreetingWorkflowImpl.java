@@ -1,7 +1,7 @@
-package com.sannette.eis.mega.workflows;
+package com.sannette.eis.mega.greeting.workflows;
 
 
-import com.sannette.eis.mega.workflowactivities.IGreetingActivities;
+import com.sannette.eis.mega.greeting.activities.IGreetingActivities;
 import com.uber.cadence.workflow.Workflow;
 
 public class GreetingWorkflowImpl implements  IGreetingWorkflow{
@@ -12,7 +12,9 @@ public class GreetingWorkflowImpl implements  IGreetingWorkflow{
     @Override
     public String getGreeting(String name) {
         // This is a blocking call that returns only after the activity has completed.
-        return activities.composeGreeting("Hello", name);
+        String result = activities.composeGreeting("hellp",name);
+        System.out.println(result);
+        return result; //activities.composeGreeting("Hello", name);
     }
 
 }
